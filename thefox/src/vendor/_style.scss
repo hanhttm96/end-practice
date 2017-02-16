@@ -1,0 +1,174 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?han6xo');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?han6xo#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?han6xo') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?han6xo') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?han6xo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hyperlink {
+  &:before {
+    content: $icon-hyperlink;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.icon-dribbble {
+  &:before {
+    content: $icon-dribbble;
+  }
+}
+.icon-rss {
+  &:before {
+    content: $icon-rss;
+  }
+}
+.icon-image {
+  &:before {
+    content: $icon-image;
+  }
+}
+.icon-photo {
+  &:before {
+    content: $icon-photo;
+  }
+}
+.icon-picture-o {
+  &:before {
+    content: $icon-picture-o;
+  }
+}
+.icon-star-half-empty {
+  &:before {
+    content: $icon-star-half-empty;
+  }
+}
+.icon-star-half-full {
+  &:before {
+    content: $icon-star-half-full;
+  }
+}
+.icon-star-half-o {
+  &:before {
+    content: $icon-star-half-o;
+  }
+}
+.icon-lamp {
+  &:before {
+    content: $icon-lamp;
+  }
+}
+.icon-atom {
+  &:before {
+    content: $icon-atom;
+  }
+}
+.icon-documents {
+  &:before {
+    content: $icon-documents;
+  }
+}
+.icon-ribbon {
+  &:before {
+    content: $icon-ribbon;
+  }
+}
+.icon-display {
+  &:before {
+    content: $icon-display;
+  }
+}
+.icon-params {
+  &:before {
+    content: $icon-params;
+  }
+}
+.icon-add {
+  &:before {
+    content: $icon-add;
+  }
+}
+.icon-navigate_before {
+  &:before {
+    content: $icon-navigate_before;
+  }
+}
+.icon-navigate_next {
+  &:before {
+    content: $icon-navigate_next;
+  }
+}
+.icon-language {
+  &:before {
+    content: $icon-language;
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;
+  }
+}
+.icon-social-facebook {
+  &:before {
+    content: $icon-social-facebook;
+  }
+}
+.icon-social-vimeo {
+  &:before {
+    content: $icon-social-vimeo;
+  }
+}
+.icon-social-linkedin {
+  &:before {
+    content: $icon-social-linkedin;
+  }
+}
+.icon-star-outline {
+  &:before {
+    content: $icon-star-outline;
+  }
+}
+.icon-google {
+  &:before {
+    content: $icon-google;
+  }
+}
+.icon-pinterest {
+  &:before {
+    content: $icon-pinterest;
+  }
+}
+.icon-tumblr {
+  &:before {
+    content: $icon-tumblr;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+

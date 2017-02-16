@@ -1,0 +1,38 @@
+header
+  .header-top
+    .container
+      .wrap-header-top
+        p.header-title the best for magazine style
+        h2.main-title do you like 
+          span.color-thefox thefox 
+          | mag
+        p.header-title yeah, i know you like so much, so please buy and try it now
+        button.btn-purchase purchase now
+  // navigation
+  nav.navbar.navbar-default
+    .container
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='javascript: void(0);') the
+          span.text-logo fox
+      // Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a.category.color-active(href='javascript: void(0);')
+              | home
+              span.sr-only (current)
+          each menu in ['page', 'portfolio', 'blog', 'shop', 'travel', 'shortcodes', 'features', 'contact']    
+            li
+              a.category(href='javascript: void(0);')= menu
+          li
+            a.category(href='javascript: void(0);')
+              input#exampleInputSearch.form-control(type='text', placeholder='Search')
+              span.icon-search
+    // /.navbar-collapse
+  // /.container-fluid
