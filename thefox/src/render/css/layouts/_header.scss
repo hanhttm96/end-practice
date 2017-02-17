@@ -17,9 +17,7 @@
     margin: $metric-small 0;
     font-weight: 600;
   }
-  .color-thefox {
-    color: $green;
-  }
+
   .btn-purchase {
     background: transparent;
     font-size: $font-size-tiny;
@@ -49,4 +47,8 @@
 .icon-search {
   display: none;
   font-size: 20px;
+}
+
+.color-thefox {
+  color: $green;
 }
