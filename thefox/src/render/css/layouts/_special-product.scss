@@ -6,10 +6,6 @@
     margin: 0 $metric-medium;
   }
 
-  .img__slider {
-    width: 100%;
-  }
-
   .glyphicon {
     position: absolute;
     font-size: 15px;
@@ -35,6 +31,7 @@
   top: 25%;
   left: 38%;
   display: flex;
+  font-size: 18px;
 
   .link {
     @include square (42px);
@@ -43,8 +40,9 @@
     margin-right: 10px;
     .icon-hyperlink {
       position: relative;
-      top: 30%;
-      left: 30%;
+      top: 22%;
+      left: 28%;
+      color: $blue-dark;
     }
   }
 
@@ -55,8 +53,8 @@
     border: solid 2px $while;
     .icon-search {
       position: relative;
-      top: 25%;
-      left: 25%;
+      top: 22%;
+      left: 28%;
       color: $while; 
     }
   }
@@ -68,10 +66,10 @@
   &:hover {
     .wrap-intro-hover{
       visibility: visible;
-      -webkit-animation-name: hover-animation; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-      animation-name: hover-animation;
-      animation-duration: 1s;
+      @extend %hover-effect;
+    }
+    .img__slider {
+      opacity: 0.5;
     }
   }
 }

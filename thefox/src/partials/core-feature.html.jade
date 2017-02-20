@@ -14,14 +14,18 @@ section.core-feature
       .feature-left.col-md-6
         each item in icon_feature_left
           .media
-            .media-left
+            .media-left.box-left
               .media-object(class='#{item.colors}')
                 span.icon-feature(class='#{item.icon}')
-            .media-body
-              h3.media-heading  Lorem ipsum dolor sit amet
-              h4 sub title here
+            .media-body.text-right
+              h3.media-heading.heading  Lorem ipsum dolor sit amet
+              h4.sub-heading sub title here
               p.passage  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus odit distinctio quo quaerat culpa atque, modi nisi odio minus rem repellendus qui illum quibusdam a molestiae
-            
+            // >=1024px display
+            .media-right
+              .media-object(class='#{item.colors}')
+                span.icon-feature(class='#{item.icon}')
+
       .feature-right.col-md-6
         each item in icon_feature_right
           .media
@@ -29,7 +33,7 @@ section.core-feature
               .media-object(class='#{item.colors}')
                 span.icon-feature(class='#{item.icon}')
             .media-body
-              h3.media-heading  Lorem ipsum dolor sit amet
-              h4 sub title here
+              h3.media-heading.heading  Lorem ipsum dolor sit amet
+              h4.sub-heading sub title here
               p.passage  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus odit distinctio quo quaerat culpa atque, modi nisi odio minus rem repellendus qui illum quibusdam a molestiae
             

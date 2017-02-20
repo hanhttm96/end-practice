@@ -17,7 +17,6 @@
   opacity: 0.5;
   &:hover {
     opacity: 1;
-    border: solid 5px $feature-black;
   }
   .icon-feature {
     position: relative;
@@ -47,4 +46,16 @@
   &.green-light {
     background: $feature-green-light;
   }
+}
+
+.media-right {
+  display: none;
+}
+
+.box-left {
+  display: table-cell;
+}
+
+.text-right {
+  text-align: left;
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 body {
   font-family: $font-main;
-  font-size: $font-size-main;
+  font-size: 14px;
 }
 @media (max-width: $screen-xs) { 
   body {
@@ -11,6 +11,15 @@ body {
 
 h1, h2 ,h3, h4 {
   text-transform: uppercase;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .navbar {
@@ -36,3 +45,15 @@ h1, h2 ,h3, h4 {
     font-size: 26px;
   }
 }
+
+.media {
+  margin-bottom: 30px;
+  &-left {
+    padding-right: 20px;
+  }
+
+  &-right {
+    padding-left: 20px;
+  }
+}
+

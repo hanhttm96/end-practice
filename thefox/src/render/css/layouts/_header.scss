@@ -28,10 +28,7 @@
     &:hover {
       background-color: $while;
       color: $feature-black;
-      -webkit-animation-name: hover-animation; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
-      animation-name: hover-animation;
-      animation-duration: 0.8s;
+      @extend %hover-effect;
     }
   }
 }
@@ -44,7 +41,7 @@
 .text-logo {
   font-weight: 900;
 }
-.icon-search {
+.serch-menu {
   display: none;
   font-size: 20px;
 }

@@ -37,8 +37,8 @@ section.special-product
           span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
           span.sr-only Next
       .caption
-        h3 this is your work title
-        h4 add category
+        h3.heading this is your work title
+        h4.sub-heading add category
         p.passage  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis harum explicabo quod unde, molestiae earum incidunt temporibus sunt maiores recusandae eos enim repellat amet a omnis cum facilis accusamus tempore.
     br
     .row
@@ -47,24 +47,26 @@ section.special-product
           .wrap-intro
             img.img-responsive.img__slider(src= images_url_food + item, alt= item)
             .caption
-              h3 this is your work title
-              h4 add category
+              h3.heading this is your work title
+              h4.sub-heading add category
               p.passage  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis harum explicabo quod unde, molestiae earum incidunt temporibus sunt maiores recusandae eos enim repellat amet a omnis cum facilis accusamus tempore.
     br
     .row
       each item in images_food
-        .col-sm-6.col-md-4
+        .col-md-4.col-sm-6
           .wrap-food
             img.img-responsive.img__slider(src= images_url_food + item, alt= item)
             .caption
-              h3 this is your work title
-              h4 add category
+              h3.heading this is your work title
+              h4.sub-heading add category
               p.passage  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis harum explicabo quod unde, molestiae earum incidunt temporibus sunt maiores recusandae eos enim repellat amet a omnis cum facilis accusamus tempore.
             .wrap-intro-hover
               .link
-                span.icon-hyperlink
+                a(href="javascript: void(0);")
+                  span.icon-hyperlink
               .search
-                span.icon-search
+                a(href="javascript: void(0);")
+                  span.icon-search
 
 section.special-intro
   .container

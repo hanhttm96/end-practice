@@ -3,6 +3,10 @@
   clear: both;
 }
 
+.img__slider {
+  width: 100%;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -23,7 +27,23 @@
   top: 20px;
 }
 
+.heading {
+  font-size: $font-size-small;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 12px;
+}
+
 %section-margin {
   padding: $margin-section 0;
   position: relative;
+}
+
+%hover-effect {
+  -webkit-animation-name: hover-animation; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: hover-animation;
+  animation-duration: 1s;
 }
