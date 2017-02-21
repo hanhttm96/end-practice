@@ -1,0 +1,97 @@
+.social {
+  background-color: $blue-dark;
+  color: $while;
+  margin: 50px 0;
+  padding-bottom: 100px;
+  position: relative;
+
+  .icon-world {
+    @include sprite-background('/images/icon-section.png');
+    @include square(45px);
+    @include sprite-column(5, 47px, 0);
+    margin: 0 $metric-medium;
+  }
+
+  .border {
+    @include square(90px);
+    background-color: $blue-dark; 
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      border: solid 1px $while;
+      position: relative;
+      padding: 4px;
+      @extend %hover-effect;
+    }
+  }
+  a {
+    color: $while;
+  }
+  .circle {
+    @include square(80px);
+    border-radius: 50%;
+    position: relative;
+
+    .icon-social {
+      position: absolute;
+      left: 30%;
+      top: 30%;
+      font-size: 30px;
+    }
+
+    &.blue {
+      background-color: #1a55a4;
+      border: solid 5px lighten(#1a55a4, 15%);
+    }
+    &.blue-light {
+      background-color: $blue;
+      border: solid 5px lighten($blue, 15%);
+    }
+    &.red {
+      background-color: #ef584d;
+      border: solid 5px lighten(#ef584d, 15%);
+    }
+    &.green {
+      background-color: #96ce4b;
+      border: solid 5px lighten(#96ce4b, 15%);
+    }
+    &.pink {
+      background-color: $pink;
+      border: solid 5px lighten($pink, 15%);
+    }
+    &.gray {
+      background-color: $gray;
+      border: solid 5px lighten($gray, 15%);
+    }
+  }
+}
+// section portfolio
+.portfolio {
+  background-color: #f9fafb;
+  margin: 50px 0 0 0;
+  padding: 58px 0 80px 0;
+}
+.icon-intro {
+  @include sprite-background('/images/icon-section-social.png');
+  display: inline-block;
+  @include square(47px);
+  position: relative;
+  bottom: -18px;
+  margin-right: 20px;
+}
+@for $i from 1 through 6 {
+  .icon#{$i} {
+    @include sprite-column($i, 50px, 0);
+  }
+}
+// section purchase 
+.purchase {
+  background-image: url('/images/bg-social.jpg');
+  background-size: cover;
+  color: $while;
+  padding: 80px 0;
+  text-align: center;
+}
+

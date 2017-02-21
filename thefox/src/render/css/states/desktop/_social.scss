@@ -1,0 +1,16 @@
+@media (min-width: $screen-lg){ 
+  .circle {
+    width: 145px !important;
+    height: 145px !important;
+    .icon-social {
+        position: absolute !important;
+        left: 40% !important;
+        top: 40% !important;
+        font-size: 30px;
+    }
+  }
+  .border {
+    width: 155px !important;
+    height: 155px !important;
+  }
+}

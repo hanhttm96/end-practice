@@ -5,7 +5,9 @@
     @include sprite-column(2, 45px, 0);
     margin: 0 $metric-medium;
   }
-
+  .img__slider {
+    max-height: 500px !important;
+  }
   .glyphicon {
     position: absolute;
     font-size: 15px;
@@ -31,7 +33,7 @@
   top: 25%;
   left: 38%;
   display: flex;
-  font-size: 18px;
+  font-size: 20px;
 
   .link {
     @include square (42px);
@@ -39,6 +41,12 @@
     background: $while;
     margin-right: 10px;
     .icon-hyperlink {
+      position: relative;
+      top: 22%;
+      left: 28%;
+      color: $blue-dark;
+    }
+    .icon-navigate_next {
       position: relative;
       top: 22%;
       left: 28%;

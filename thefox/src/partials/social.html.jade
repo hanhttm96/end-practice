@@ -1,0 +1,49 @@
+-var listIcon = [{colors: 'blue', icon: 'icon-social-facebook'}, {colors: 'blue-light', icon: 'icon-twitter'}, {colors: 'red', icon: 'icon-pinterest'}, {colors: 'green', icon: 'icon-google'}, {colors: 'pink', icon: 'icon-dribbble'}, {colors: 'gray', icon: 'icon-tumblr'}]
+- var images_feature = ['cheddar.jpg', 'egg.jpg', 'firsh.jpg', 'strawberry.jpg']
+- var images_url_feature = ["images/food/"]
+section.social
+  .container
+    .wrap-title
+      p.section__text--title thefox's social
+      p.section__text--description connect with us everytime
+      .wrap-icon
+        .horizontal-stripes
+        .icon-world
+        .horizontal-stripes
+     .row
+       each item in listIcon
+        .col-md-2.col-sm-2.col-xs-4
+          .border
+            a(href='javascript: void (0);')
+              .circle(class= '#{item.colors}')
+                span.icon-social(class= '#{item.icon}')
+section.post-images
+  .container
+    .wrap-title
+      p.section__text--title.text-left featured post
+    each item in images_feature
+      .col-md-3.col-sm-6
+        .wrap-featured
+          img.img-responsive.img__slider(src= images_url_feature + item, alt= item)
+          .caption
+            h3.heading this is your work title
+            h4.sub-heading 27TH JULY 2016 | WORDPRESS | ADMIN
+            p.passage  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis harum explicabo quod unde.
+section.portfolio
+  .container
+    .row
+      - for (var i=1; i<7; i++) {
+        .col-md-4.col-sm-6
+          h3.heading 
+            a.icon-intro(href="javascript: void(0);", class= 'icon' + i)
+            | amazing portfolio
+          br
+          p.passage  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis harum explicabo quod unde, molestiae earum incidunt temporibus sunt maiores recusandae eos enim repellat amet     
+      - }
+section.purchase 
+  .container
+    .wrap-title
+      p.section__text--title.small-weight we are always working hard to create the best prodcuts
+      p.section__text--description you will happy when buying our products. don't forget to rate it stars, it's really helpful for us
+    button.btn.btn-now(type='button') purchase now
+    button.btn.btn-try(type='button') try it now

@@ -1,0 +1,17 @@
+//code here
+.btn {
+  @include size(200px, 50px);
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.btn-now {
+  background: $while;
+  color: $gray-text;
+}
+
+.btn-try {
+  background: $feature-black;
+  color: $while;
+}
